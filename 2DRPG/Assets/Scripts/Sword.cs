@@ -8,7 +8,11 @@ public class Sword : MonoBehaviour
     private Animator myAnimator;
     private PlayerController playerController;
     private ActiveWeapon activeWeapon;
+    
+    [SerializeField] private GameObject slashAnimPrefab;
+    [SerializeField] private Transform slashAnimSpawnPoint;
 
+    private GameObject slashAnim;
 
     private void Awake()
     {
@@ -30,7 +34,12 @@ public class Sword : MonoBehaviour
     private void Attack()
     {
         myAnimator.SetTrigger("Attack");
+
+        slashAnim = Instantiate(slashAnimPrefab,slashAnimSpawnPoint.position,Quaternion.identity); //quaternion identity olduðu gibi rotasyon gibi biþi
+        slashAnim.transform.parent = this.transform.parent;
+
     }
+
     private void MouseFollowWithOffset()
     {
         Vector3 mousePos = Input.mousePosition;
