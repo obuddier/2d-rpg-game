@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Sword : MonoBehaviour
@@ -16,7 +14,7 @@ public class Sword : MonoBehaviour
 
     private void Awake()
     {
-        playerController=GetComponentInParent<PlayerController>();  // GetComponentInParent: ilk parentta bulamazsa öncekine gidiyor
+        playerController=GetComponentInParent<PlayerController>();  // GetComponentInParent: ilk parentta bulamazsa ï¿½ncekine gidiyor
         activeWeapon = GetComponentInParent<ActiveWeapon>();
         playerControls = new PlayerControls();
         myAnimator = GetComponent<Animator>();
@@ -35,7 +33,7 @@ public class Sword : MonoBehaviour
     {
         myAnimator.SetTrigger("Attack");
 
-        slashAnim = Instantiate(slashAnimPrefab,slashAnimSpawnPoint.position,Quaternion.identity); //quaternion identity olduðu gibi rotasyon gibi biþi
+        slashAnim = Instantiate(slashAnimPrefab,slashAnimSpawnPoint.position,Quaternion.identity); //quaternion identity olduï¿½u gibi rotasyon gibi biï¿½i
         slashAnim.transform.parent = this.transform.parent;
 
     }

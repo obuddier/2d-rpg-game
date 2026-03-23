@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
@@ -37,6 +36,6 @@ private void Awake()
 
     private Vector2 GetRoamingPosition()
     {
-        return new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized; //normalize: hipotenüs örneði 
+        return new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized; //normalize: hipotenÃ¼s Ã¶rneÄŸi 
     }
 }
