@@ -1,6 +1,7 @@
 using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController Instance;
     public bool FacingLeft { get => facingLeft;
         set { facingLeft = value; } }
     
@@ -17,6 +18,15 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        if(Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
         playerControls= new PlayerControls();
         rb = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
