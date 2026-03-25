@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
+    [SerializeField] private float roamChangeDirInterval=2f;
 private enum State
     {
         Roaming
@@ -30,7 +31,7 @@ private void Awake()
         {
             Vector2 roamPosition= GetRoamingPosition();
             enemyPathFinding.MoveTo(roamPosition);
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(roamChangeDirInterval);
         }
     }
 
