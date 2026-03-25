@@ -29,15 +29,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.03846154
         value: {x: 0, y: 0, z: 74.978}
-        inSlope: {x: 0, y: 0, z: -1877.057}
-        outSlope: {x: 0, y: 0, z: -1877.057}
+        inSlope: {x: 0, y: 0, z: -1867.97}
+        outSlope: {x: 0, y: 0, z: -1867.97}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 0.07692308
-        value: {x: 0, y: 0, z: -15.699}
+        value: {x: 0, y: 0, z: -15}
         inSlope: {x: 0, y: 0, z: -1935.518}
         outSlope: {x: 0, y: 0, z: -1935.518}
         tangentMode: 0
@@ -47,8 +47,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.115384616
         value: {x: 0, y: 0, z: -73.908}
-        inSlope: {x: 0, y: 0, z: -1517.2689}
-        outSlope: {x: 0, y: 0, z: -1517.2689}
+        inSlope: {x: 0, y: 0, z: -1526.356}
+        outSlope: {x: 0, y: 0, z: -1526.356}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
@@ -91,17 +91,17 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.07692308
         value: {x: 1.07, y: 0.13, z: 0}
-        inSlope: {x: 0, y: -15.860002, z: 0}
-        outSlope: {x: 0, y: -15.860002, z: 0}
+        inSlope: {x: 0, y: -15.600001, z: 0}
+        outSlope: {x: 0, y: -15.600001, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 0.115384616
-        value: {x: 0.74, y: -0.42, z: 0}
-        inSlope: {x: -12.870001, y: 0, z: 0}
-        outSlope: {x: -12.870001, y: 0, z: 0}
+        value: {x: 0.65, y: -0.4, z: 0}
+        inSlope: {x: -12.870001, y: -1.0399989, z: 0}
+        outSlope: {x: -12.870001, y: -1.0399989, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
@@ -202,7 +202,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.115384616
-        value: 0.74
+        value: 0.65
         inSlope: -12.870001
         outSlope: -12.870001
         tangentMode: 136
@@ -251,17 +251,17 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.07692308
         value: 0.13
-        inSlope: -15.860002
-        outSlope: -15.860002
+        inSlope: -15.600001
+        outSlope: -15.600001
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.115384616
-        value: -0.42
-        inSlope: 0
-        outSlope: 0
+        value: -0.4
+        inSlope: -1.0399989
+        outSlope: -1.0399989
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -470,15 +470,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.03846154
         value: 74.978
-        inSlope: -1877.057
-        outSlope: -1877.057
+        inSlope: -1867.97
+        outSlope: -1867.97
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.07692308
-        value: -15.699
+        value: -15
         inSlope: -1935.518
         outSlope: -1935.518
         tangentMode: 136
@@ -488,8 +488,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.115384616
         value: -73.908
-        inSlope: -1517.2689
-        outSlope: -1517.2689
+        inSlope: -1526.356
+        outSlope: -1526.356
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -550,4 +550,11 @@ AnimationClip:
     flags: 0
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: SwingDownFlipAnim
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
